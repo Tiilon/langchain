@@ -118,11 +118,11 @@ list_of_tools = {tool.name: tool for tool in tools}
 
 llm_with_tools = llm.bind_tools(tools)
 # query = "What is the latest news"
-# query = "What is today's stock market news?"
+query = "What is today's stock market news?"
 # query = "What is LLM?"
 # query = "How to treat lung cancer?"
 # query = "what is 2 * 3?"
-query = "What is medicine for lung cancer?"
+# query = "What is medicine for lung cancer?"
 response = llm_with_tools.invoke(query)
 
 from langchain_core.messages import HumanMessage
